@@ -1,6 +1,6 @@
 /*1. Reset CSS e Estilos Globais*/
 
-:root{
+:root {
     --cor-fundo: #f0f2f5;
     --cor-branco: #ffffff;
     --cor-texto-primario: #1c1e21;
@@ -9,14 +9,14 @@
     --cor-acento: #007bff;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, "Helvetica Neue", Arial,sans-serif;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: var(--cor-fundo);
 
     /*Centralizando o componente na página para visualização*/
@@ -28,12 +28,12 @@ body{
 
 /* 2. Esilos do Componente Principal: .card */
 
-.card{
+.card {
     background-color: var(--cor-branco);
     border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     width: 320px;
-/*Aqui que começa a mágica da transformação*/
+    /*Aqui que começa a mágica da transformação*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     overflow: hidden;
@@ -44,12 +44,13 @@ body{
 
 /*3. Efeito de Hover no Card*/
 
-.card:hover{
-    transform: translateY(-10px);/*Movimenta o Card para cima em 10px*/
-    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+.card:hover {
+    transform: translateY(-10px);
+    /*Movimenta o Card para cima em 10px*/
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
 
-.card_image{
+.card_image {
     width: 100%;
     height: 400px;
 }
@@ -58,33 +59,36 @@ body{
 .card_image-container {
     width: 100%;
     height: 100%;
-    object-fit: cover;/*Cobre todo o container mantendo a proporção/ Garante que a imagem cubra o espaço sem distorcer*/
+    object-fit: cover;
+    /*Cobre todo o container mantendo a proporção/ Garante que a imagem cubra o espaço sem distorcer*/
 }
 
 /*5. Estilos do Título do Card(Nome, Titulo e Social)*/
-.card_info{
+.card_info {
     padding: 24px;
 }
 
-.card_name{
-    font-size: 1.5rem;/* 24px */
+.card_name {
+    font-size: 1.5rem;
+    /* 24px */
     color: var(--cor-texto-primario);
     margin-bottom: 8px;
 }
 
-.card_title{
-    font-size: 1.0rem;/*16px*/
+.card_title {
+    font-size: 1.0rem;
+    /*16px*/
     color: var(--cor-texto-secundario);
     margin-bottom: 16px;
 }
 
-.card_social{
+.card_social {
     display: flex;
     justify-content: center;
     gap: 16px;
 }
 
-.card_social a{
+.card_social a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,11 +103,9 @@ body{
     font-weight: bold;
 }
 
-.card_social a:hover{
+.card_social a:hover {
     font-size: 15px;
-    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
     width: 50px;
     height: 50px;
 }
-
-
